@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexey Pashkan](https://up.htmlacademy.ru/htmlcss/28/user/963741).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак] https://htmlacademy.ru/profile/lizzy.
 
 ---
 
