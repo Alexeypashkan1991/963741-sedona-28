@@ -6,6 +6,7 @@
   </head>
   <body>
   <header>
+    <nav>
       <a>
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип отеля">
       </a>
@@ -14,7 +15,8 @@
         <li><a href="content.html">Фото и видео</a></li>
         <li><a href="stateMap.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>  
+      </ul>
+    </nav>    
   </header>  
     <main>
       <!--Main poster-->
@@ -98,6 +100,32 @@
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
       </section>
+      <!-- Booking form -->
+      <section>
+        <h2>Поиск гостиницы в седоне</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="check-in-date">Дата заезда</label> 
+            <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017"> 
+          </p>
+          <p>
+            <label for="check-out-date">Дата выезда</label> 
+            <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017"> 
+          </p>
+          <p>
+            <label for="number-of-adults">Взрослые</label> 
+            <input id="number-of-adults" type="number" name="adults" placeholder="2">
+            <button type="button">+</button>
+            <button type="button">-</button>  
+          </p>
+          <p>
+            <label for="number-of-kids">Дети</label> 
+            <input id="number-of-kids" type="number" name="kids" placeholder="0">
+            <button type="button">+</button>
+            <button type="button">-</button>   
+          </p>    
+          <button type="button">Найти</button>
+        </form>  
       <section>
         <div class="map">
           <!-- Здесь будет карта! -->
