@@ -58,15 +58,14 @@
           </ul>
         </fieldset>
         <div class="range">
-        <h2>Стоимость в сутки(Р):</h2> 
-        <table>
-          <tr>
-            <td>От 0</td>
-            <td>До 3000</td>
-          </tr>
-        </table>
-        <input type="range" min="0" max="3000" step="1" value="2500"> 
-        <button type="button">Показать</button> 
+        <h2>Стоимость в сутки(Р):</h2>
+          <div class="controls">
+            <label class="min-price">От<input type="number" name="min-price" min="0" max="3000">0</label>
+            <label class="max-price">До<input type="number" name="max-price" min="0" max="3000">3000</label>
+          </div>  
+          <div class="scale min-value"><button type="button"></button></div>
+          <div class="scale max-value"><button type="button"></button></div>
+        <button type="submit">Показать</button> 
         </div>
       </form>
     </section>  
