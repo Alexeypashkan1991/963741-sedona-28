@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a>
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип отеля">
       </a>
-      <ul>
+      <div class="main-navigation-wrapper">
+      <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="content.html">Фото и видео</a></li>
         <li><a href="stateMap.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
+      </div>
     </nav>    
   </header>  
     <main>
@@ -23,19 +28,19 @@
       <section>
         <img src="img/background-photo.jpg" width="1200" height="509" alt="Главный постер">
         <img src="img/intro-welcome.svg" width="457" height="351"  alt="надпись Welcome">
-        <p>
-          "Because the Grand
-           Canyon sucks!"
-        </p>
       </section>
-      <section>
-        <p>
-          Седона- небольшой городок в Аризоне,
-          заслуживающий большего!
-        </p>
-        <p>
-          Рассмотрим 5 причин, по которым Седона, круче чем Гранд Каньон!
-        </p>
+      <section class="features">
+        <ul class="features-list">
+          <li class="feature-item">
+            <p class="sedona-text-item">Седона- небольшой городок в Аризоне,
+            заслуживающий большего!</p>
+          </li>
+          <li class="feature-item">
+            <p class="reasons-text-item">
+              Рассмотрим 5 причин, по которым Седона, круче чем Гранд Каньон!
+            </p>
+          </li>
+        </ul>
       </section>
       <section>
         <div class="city">
@@ -91,17 +96,20 @@
           </li>
         </ul>  
       </section>
-      <section>
-        <p>
-          Заинтересовались ?
-        </p>
-        <p>
-          Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в седоне
-        </p>
+      <section class="features">
+        <ul class="features-list">
+          <li class="feature-item">
+            <p class="interested-text-item">Заинтересовались ?</p>
+          </li>
+          <li class="feature-item">  
+            <p class="travel-date-text-item">Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
+          </li>
+        </ul>
       </section>
       <!-- Booking form -->
-      <section>
+      <section class="form">
         <button type="button">Поиск гостиницы в седоне</button>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
@@ -138,25 +146,25 @@
       <!--Contact info-->
       <section>
         <p>
-          <a href="#">#VISITSEDONA</a>
-          <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+          <a class="visit" href="#">#VISITSEDONA</a>
+          <a class="tel" href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
         </p>
       </section>
       <!--Social network icons-->
       <section>
-        <ul>
+        <ul class="social-button">
           <li>
-            <a href="www.twitter.com">
+            <a class="twitter" href="www.twitter.com">
               <img src="img/twitter.svg" width="17" height="17" alt="Иконка Twitter">
             </a>
           </li>
           <li>
-            <a href="www.facebook.com">
+            <a class="facebook" href="www.facebook.com">
               <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Facebook">
             </a>
           </li>
           <li>
-            <a href="www.youtube.com">
+            <a class="youtube" href="www.youtube.com">
               <img src="img/youtube.svg" width="20" height="16" alt="Иконка Youtube">
             </a>
           </li>
@@ -164,9 +172,9 @@
       </section>
       <!--Website creator info-->
       <section>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="website" href="https://htmlacademy.ru/intensive/htmlcss">
             <p>WEBSITE BY</p>
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
+            <p class="academy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии"></p>
           </a>
       </section>
     </footer>  

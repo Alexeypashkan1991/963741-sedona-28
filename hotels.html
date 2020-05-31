@@ -3,20 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!--Main menu header-->
   <header>
-    <nav>
-      <a href="index.html">
+    <nav class="main-navigation">
+      <a>
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип отеля">
       </a>
-      <ul>
+      <div class="main-navigation-wrapper">
+      <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="content.html">Фото и видео</a></li>
         <li><a href="stateMap.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
+      </div>
     </nav>    
   </header>
   <main>
@@ -97,43 +102,43 @@
       </section>
       <!--List of hotels-->
       <section>
-        <ul>
+        <ul class="hotel-list">
           <!--Hotel-1-->
           <li>
             <img src="img/amara.jpg" width="135" height="90" alt="фото отеля">
-            <h2>AMARA RESORT & SPA</h2>
-            <p>Гостиница</p>
-            <p>от 4000р.</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <h2 class="hotel-name">Amara resort & spa</h2>
+            <p class="hotel"><b>Гостиница</b></p>
+            <p class="price"><b>от 4000р.</b></p>
+            <button class="more-info" type="button">Подробнее</button>
+            <button class="book" type="button">Забронировать</button>
             <div class="rating">
-              Рейтинг
+              <p>Рейтинг: 8,5</p>
               <img src="img/star.svg" width="19" height="17" alt="Звезда рейтинга">
             </div>   
           </li>
           <!--Hotel-2-->
           <li>
             <img src="img/desert.jpg" width="135" height="90" alt="фото мотеля">
-            <h2>DESERT QUAIL INN</h2>
-            <p>Мотель</p>
-            <p>от 3000р.</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <h2 class="hotel-name">Desert Quail inn</h2>
+            <p class="hotel"><b>Мотель</b></p>
+            <p class="price"><b>от 3000р.</b></p>
+            <button class="more-info" type="button">Подробнее</button>
+            <button class="book" type="button">Забронировать</button>
             <div class="rating">
-              Рейтинг
+              <p>Рейтинг 8,9</p>
               <img src="img/star.svg" width="19" height="17" alt="Звезда рейтинга">
             </div>   
           </li>
           <!--Hotel-3-->
           <li>
             <img src="img/villas.jpg" width="135" height="90" alt=" фото апартаментов">
-            <h2>VILLAS AT POCO DIABLO</h2>
-            <p>Апартаменты</p>
-            <p>от 2000р.</p>
-            <button type="button">Подробнее</button>
-            <button type="button">Забронировать</button>
+            <h2 class="hotel-name">Villas at poco diablo</h2>
+            <p class="hotel"><b>Апартаменты</b></p>
+            <p class="price"><b>от 2000р.</b></p>
+            <button class="more-info" type="button">Подробнее</button>
+            <button class="book" type="button">Забронировать</button>
             <div class="rating">
-              Рейтинг
+              <p>Рейтинг 9,2</p>
               <img src="img/star.svg" width="19" height="17" alt="Звезда рейтинга">
             </div>   
           </li>
@@ -144,25 +149,25 @@
     <!--Contact info-->
     <section>
       <p>
-        <a href="">#VISITSEDONA</a>
-        <a href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+        <a class="visit" href="#">#VISITSEDONA</a>
+        <a class="tel" href="tel:+7(495) 666-01-66">ТЕЛ: +7(495) 666-01-66</a>
       </p>
     </section>
     <!--Social network icons-->
     <section>
-      <ul>
+      <ul class="social-button">
         <li>
-          <a href="www.twitter.com">
+          <a class="twitter" href="www.twitter.com">
             <img src="img/twitter.svg" width="17" height="17" alt="Иконка Twitter">
           </a>
         </li>
         <li>
-          <a href="www.facebook.com">
+          <a class="facebook" href="www.facebook.com">
             <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка Facebook">
           </a>
         </li>
         <li>
-          <a href="www.youtube.com">
+          <a class="youtube" href="www.youtube.com">
             <img src="img/youtube.svg" width="20" height="16" alt="Иконка Youtube">
           </a>
         </li>
@@ -170,11 +175,11 @@
     </section>
     <!--Website creator info-->
     <section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <p>WEBSITE BY</p>
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
-        </a>
-    </section>
+      <a class="website" href="https://htmlacademy.ru/intensive/htmlcss">
+        <p>WEBSITE BY</p>
+        <p class="academy"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии"></p>
+      </a>
+  </section>
   </footer>       
   </body>
 </html>
