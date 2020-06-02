@@ -2,23 +2,31 @@
 :root {
   --basic-black: #000000;
   --basic-white: #ffffff;
-  --basic-blue: #81B3D2;
-  --basic-gray: #EEEEEE;
-  --basic-brown: #766357;
-  --basic-academy: #231F20;
-  --basic-form: #F2F2F2;
-  --basic-reason: #333333;
-  --basic-reating: #666666;
+  --blue: #81B3D2;
+  --medium-blue: #669EC0;
+  --dark-blue: #5496BD;
+  --silver: #EEEEEE;
+  --dark-silver: #B3B3B3;
+  --brown: #766357;
+  --dark-gray: #231F20;
+  --dark-white: #F2F2F2;
+  --light-black: #333333;
+  --basic-gray: #666666;
+  --text-blue: #639FC3;
+  --hover-brown: #604E43;
+  --active-brown: #503E33;
+  --brown-text: #A9A19B;
 }
 
 body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -38,78 +46,61 @@ img {
 }
 
 /* Main navigation */
-.main-navigation {
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--basic-white);
-  background-color: transparent;
+.site-navigation {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
 }
+
+/* Main navigation style link */
 
 .site-navigation {
   list-style: none;
 }
-/* Не нашел описания поведения кнопок меню при наведении и клике на них */
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-black);
-}
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: red;
+
+.site-navigation a:link {
+  color: var(--basic-black);
 }
 
-.main-navigation-wrapper {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--basic-black);
-  background-color: transparent;
-  text-transform: uppercase;
+.site-navigation a:hover {
+  color: var(--blue);
 }
+
+.site-navigation a:visited {
+  color: var(--dark-silver);
+}
+
+.site-navigation a:active {
+  color: var(--brown);
+}
+
+/* Content */
 
 .sedona-text-item {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
 }
 
 .reasons-text-item {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: var(--basic-reason);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
+  color: var(--light-black);
 }
 
 .interested-text-item {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   line-height: 24px;
-  color: var(--basic-reason);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
+  color: var(--light-black);
 }
 
 .travel-date-text-item {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: var(--basic-reason);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
+  color: var(--light-black);
 }
 
 /* Feature */
@@ -124,23 +115,10 @@ img {
 
 /* Footer */
 
-.visit {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
+.contacts {
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
-  color: var(--basic-black);
-}
-
-.tel {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-black);
 }
 
@@ -154,50 +132,54 @@ img {
   list-style: none;
 }
 
-.facebook {
-  background-color: var(--basic-blue);
+.social-items {
+  background-color: var(--blue);  
 }
-
-.twitter {
-  background-color: var(--basic-blue);
+/* ?????????????????????? */
+.social-items a:link {
+  color: var(--blue);
 }
-
-.youtube {
-  background-color: var(--basic-blue);  
+.social-items a:hover {
+  color: var(--medium-blue);
+}
+.social-items a:active {
+  color: var(--dark-blue);
 }
 
 .website {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-black);
-  text-align: right;
 }
+
+.academy  img:link {
+  color: red;
+}
+
+.academy a:hover {
+  fill: green;
+}
+
+.academy a:active {
+  color: blue;
+}
+
 /* Hotel.html */
 .hotel-list {
   list-style: none;
 }
 
 .hotel-name {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-transform: uppercase;
   color: var(--basic-black);
 }
-.hotel, .price {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
+
+.hotel {
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-  color: var(--basic-reason);
+  color: var(--light-black);
 }
 
 /* Buttons */
@@ -205,37 +187,48 @@ img {
   width: 110px;
   height: 27px;
   color: var(--basic-white);
-  background-color: var(--basic-blue);
+  background-color: var(--blue);
 }
 
 .book {
   width: 142px;
   height: 27px;
   color: var(--basic-white);
-  background-color: var(--basic-brown);
+  background-color: var(--brown);
 }
-/* Не срабатывают вложенные теги, скорее всего что-то не верно прописал */
-.hotel b {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
+
+.mark {
+  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
+  color: var(--basic-white);
+}  
+
+.more-info:hover {
+  background-color: var(--medium-blue);
+}
+
+.more-info:active {
+  background-color: var(--dark-blue);
+  color: var(--text-blue);
+}
+
+.book:hover {
+  background-color: var(--hover-brown) ;
+}
+
+.book:active {
+  background-color: var(--active-brown) ;
+  color: var(--brown-text);
 }
 
 /* Rating */
 .rating {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-  color: var(--basic-reating);
+  color: var(--basic-gray);
   width: 110px;
   height: 27px;
-  background-color: var(--basic-form);
+  background-color: var(--dark-white);
   text-align: center;
 }
