@@ -16,6 +16,7 @@
   --hover-brown: #604E43;
   --active-brown: #503E33;
   --brown-text: #A9A19B;
+  --metalic: #BDBBBC;
 }
 
 body {
@@ -59,19 +60,19 @@ img {
   list-style: none;
 }
 
-.site-navigation a:link {
+.menu:link {
   color: var(--basic-black);
 }
 
-.site-navigation a:hover {
+.menu:hover {
   color: var(--blue);
 }
 
-.site-navigation a:visited {
+.menu:visited {
   color: var(--dark-silver);
 }
 
-.site-navigation a:active {
+.menu:active {
   color: var(--brown);
 }
 
@@ -135,15 +136,15 @@ img {
 .social-items {
   background-color: var(--blue);  
 }
-/* ?????????????????????? */
-.social-items a:link {
-  color: var(--blue);
+
+.social-items:link {
+  background-color: var(--blue);
 }
-.social-items a:hover {
-  color: var(--medium-blue);
+.social-items:hover {
+  background-color: var(--medium-blue);
 }
-.social-items a:active {
-  color: var(--dark-blue);
+.social-items:active {
+  background-color: var(--dark-blue);
 }
 
 .website {
@@ -152,16 +153,16 @@ img {
   color: var(--basic-black);
 }
 
-.academy  img:link {
-  color: red;
+.academy:link path {
+  fill: var(--dark-gray);
 }
 
-.academy a:hover {
-  fill: green;
+.academy:hover path {
+  fill: var(--blue);
 }
 
-.academy a:active {
-  color: blue;
+.academy:active path {
+  fill: var(--metalic);
 }
 
 /* Hotel.html */
@@ -185,7 +186,7 @@ img {
 /* Buttons */
 .more-info {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   color: var(--basic-white);
   background-color: var(--blue);
 }
