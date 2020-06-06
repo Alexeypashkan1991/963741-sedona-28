@@ -17,6 +17,8 @@
   --active-brown: #503E33;
   --brown-text: #A9A19B;
   --metalic: #BDBBBC;
+  --narrow-silver: #CACACA;
+  --checkbox-gray: #6a6a6a;
 }
 
 body {
@@ -104,11 +106,57 @@ img {
   color: var(--light-black);
 }
 
-/* Feature */
-
-.features-list {
-  list-style: none;
+.icons {
+  list-style: none; 
 }
+
+.gray-background {
+  background-color: var(--silver);
+}
+.city {
+  background-color: var(--blue);
+}
+
+.subtitle-white {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-white); 
+}
+
+.text-white {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.text-white-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.subtitle-black {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black); 
+}
+
+.text-black {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.sort {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+/* Feature */
 
 .feature-item {
   text-align: center;
@@ -133,7 +181,11 @@ img {
   list-style: none;
 }
 
-.social-items {
+.sort-items {
+  list-style: none;
+}
+
+.social-button {
   background-color: var(--blue);  
 }
 
@@ -170,6 +222,10 @@ img {
   list-style: none;
 }
 
+.infrastructure {
+  list-style: none;
+}
+
 .hotel-name {
   font-weight: 700;
   font-size: 21px;
@@ -183,6 +239,61 @@ img {
   color: var(--light-black);
 }
 
+.option:link {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 1px dotted;
+  border-color: var(--blue);
+}
+
+.option:hover {
+  color: var(--blue);
+  opacity: 1;
+  border-bottom: 1px dotted;
+  border-color: var(--blue);
+}
+
+.option:active {
+  color: var(--basic-black);
+  border: none;
+}
+.option:visited {
+  color: var(--blue);
+  border: none;
+}
+/* Пропадает курсор мыши при наведении */
+.hotel-name:link {
+  color: var(--basic-black);
+}
+
+.hotel-name:hover {
+  color: var(--blue);
+}
+
+.hotel-name:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* up & down Narrows */
+
+/* Не сообразил почему не получается передать серый цвет когда ссылка в покое */
+.narrow:link path {
+  fill: var(--narrow-silver);
+}
+
+.narrow:hover path {
+  fill: var(--basic-black);
+}
+
+.narrow:active path {
+  fill: var(--blue);
+}
+
+.narrow:visited path {
+  fill: var(--blue);
+}
+
 /* Buttons */
 .more-info {
   width: 110px;
@@ -190,6 +301,26 @@ img {
   color: var(--basic-white);
   background-color: var(--blue);
 }
+
+.show-button {
+  font-size: 14px;
+  line-height: 21px;
+  width: 137px;
+  min-height: 36px;
+  color: var(--basic-white);
+  border: 2px solid;
+  border-color: var(--basic-white);
+  border-radius: 2px;
+}
+
+.show-button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Checkbox */
+
+
 
 .book {
   width: 142px;
