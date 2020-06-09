@@ -261,7 +261,7 @@ img {
   color: var(--blue);
   border: none;
 }
-/* Пропадает курсор мыши при наведении */
+
 .hotel-name:link {
   color: var(--basic-black);
 }
@@ -270,14 +270,13 @@ img {
   color: var(--blue);
 }
 
-.hotel-name:active {
+.hotel-name:active .opacity {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
 /* up & down Narrows */
 
-/* Не сообразил почему не получается передать серый цвет когда ссылка в покое */
 .narrow:link path {
   fill: var(--narrow-silver);
 }
