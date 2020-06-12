@@ -85,12 +85,14 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  width: 480px;
 }
 
 .reasons-text-item {
   font-size: 14px;
   line-height: 26px;
   color: var(--light-black);
+  width: 519px;
 }
 
 .interested-text-item {
@@ -104,6 +106,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--light-black);
+  text-align: center;
 }
 
 .icons {
@@ -183,6 +186,7 @@ img {
 
 .sort-items {
   list-style: none;
+  
 }
 
 .social-button {
@@ -363,3 +367,109 @@ img {
   background-color: var(--dark-white);
   text-align: center;
 }
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+/* Highlight */
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(165, 18, 18, 0.3);
+  outline-offset: -5px;
+}
+.site-navigation {
+  outline: 5px solid rgba(10, 13, 206, 0.3);
+  outline-offset: -5px;  
+}
+
+/* Main navigation */
+.main-navigation  {
+  display: flex;
+  flex-direction: column;
+  justify-content: row; 
+}
+
+.main-poster {
+  position: relative;
+  width: 100%;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 77px;
+  left: 371px;
+}
+
+.wonderful-sedona {
+  margin-top: 42px;
+  padding-bottom: 33px;
+  margin-left: 365px;
+  margin-right: 365px;
+  outline: 5px solid rgba(10, 206, 157, 0.3);
+  outline-offset: -5px; 
+}
+
+.wonderful-reasons {
+  margin-top: 16px;
+  margin-left: 340px;
+  margin-right: 341px;
+  outline: 5px solid rgba(231, 6, 43, 0.3);
+  outline-offset: -5px; 
+}
+
+.interested {
+  width: 435px;
+  min-height: 155px;
+  margin-top: 58px;
+  margin-left: 383px;
+  margin-right: 382px;
+  outline: 5px solid rgba(89, 231, 6, 0.3);
+  outline-offset: -5px; 
+}
+
+/* Footer */
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  outline: 5px solid rgba(10, 206, 157, 0.3);
+  outline-offset: -5px; 
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  padding-left: 117px;
+}
+
+.tel {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9px;
+  padding-left: 117px;  
+}
+
+/* Social button */
+
+.social-button {
+  display: grid;
+  grid-template-columns: 46px 46px 46px;
+  column-gap: 20px;
+  margin-top: 36px;
+}
+
+
