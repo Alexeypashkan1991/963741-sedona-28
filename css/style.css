@@ -54,6 +54,9 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Main navigation style link */
@@ -185,12 +188,7 @@ img {
 }
 
 .sort-items {
-  list-style: none;
-  
-}
-
-.social-button {
-  background-color: var(--blue);  
+  list-style: none; 
 }
 
 .social-items:link {
@@ -224,6 +222,8 @@ img {
 /* Hotel.html */
 .hotel-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .infrastructure {
@@ -238,6 +238,7 @@ img {
 }
 
 .hotel {
+  display: inline;
   font-size: 14px;
   line-height: 21px;
   color: var(--light-black);
@@ -323,16 +324,18 @@ img {
 
 /* Checkbox */
 
-
-
 .book {
-  width: 142px;
+  min-width: 142px;
   height: 27px;
   color: var(--basic-white);
   background-color: var(--brown);
+  margin-left: 6px;
+  margin-right: 522px;
 }
 
 .mark {
+  width: 110px;
+  height: 27px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -359,13 +362,27 @@ img {
 
 /* Rating */
 .rating {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: 93px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-gray);
   width: 110px;
   height: 27px;
   background-color: var(--dark-white);
-  text-align: center;
+}
+
+/* Wrapper */
+.wrapper {
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 1200px;
+  outline: 5px solid rgba(10, 206, 157, 0.3);
+  outline-offset: -5px; 
 }
 
 /* Grid */
@@ -381,26 +398,27 @@ img {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
-/* Highlight */
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
+
+/* LOGO */
+
+.main-navigation {
+  position: relative;
 }
 
 .main-header-logo {
-  outline: 5px solid rgba(165, 18, 18, 0.3);
-  outline-offset: -5px;
-}
-.site-navigation {
-  outline: 5px solid rgba(10, 13, 206, 0.3);
-  outline-offset: -5px;  
+  display: inline-block;
+  margin-left: 531px;
+  position: absolute;
+  top: -20px; 
+  z-index: 1;
 }
 
 /* Main navigation */
-.main-navigation  {
+
+.site-navigation {
   display: flex;
-  flex-direction: column;
-  justify-content: row; 
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .main-poster {
@@ -412,6 +430,12 @@ img {
   position: absolute;
   top: 77px;
   left: 371px;
+}
+
+.shape {
+  position: absolute;
+  top: 453px;
+  margin-left: -1200px;
 }
 
 .wonderful-sedona {
@@ -427,8 +451,6 @@ img {
   margin-top: 16px;
   margin-left: 340px;
   margin-right: 341px;
-  outline: 5px solid rgba(231, 6, 43, 0.3);
-  outline-offset: -5px; 
 }
 
 .interested {
@@ -437,8 +459,7 @@ img {
   margin-top: 58px;
   margin-left: 383px;
   margin-right: 382px;
-  outline: 5px solid rgba(89, 231, 6, 0.3);
-  outline-offset: -5px; 
+
 }
 
 /* Footer */
@@ -452,15 +473,16 @@ img {
 .visit {
   display: flex;
   flex-direction: column;
-  padding-top: 23px;
-  padding-left: 117px;
+  margin-top: 23px;
+  margin-left: 153px;
 }
 
 .tel {
   display: flex;
   flex-direction: column;
-  padding-top: 9px;
-  padding-left: 117px;  
+  margin-top: 9px;
+  margin-left: 117px;
+  margin-bottom: 36px; 
 }
 
 /* Social button */
@@ -468,8 +490,97 @@ img {
 .social-button {
   display: grid;
   grid-template-columns: 46px 46px 46px;
-  column-gap: 20px;
+  grid-column-gap: 6px;
   margin-top: 36px;
+  margin-left: 163px;
+  justify-content: center;
 }
 
+.twitter {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+}
 
+.facebook {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+}
+
+.youtube {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  width: 197px;
+  margin-left: 190px;
+  margin-top: 39px;
+  margin-bottom: 41px;
+}
+
+.copyright .website {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.academy {
+  margin-left: 8px;
+}
+
+/* Hotels */
+
+.housing {
+  margin-left: 73px;
+  margin-top: 30px;
+}
+
+.hotels-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.opacity {
+  margin-top: 23px;
+  margin-bottom: 7px;
+}
+
+.price {
+  margin-left: 9px;
+}
+
+.hotel-description {
+  margin-left: 29px;
+}
+
+.more-info {
+  margin-top: 12px;
+}
+
+.rating-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 72px;
+}
+
+.star-pic {
+  margin-right: 5px;
+  margin-top: 29px;
+}
