@@ -57,6 +57,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* Main navigation style link */
@@ -88,14 +93,16 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  width: 480px;
+  margin: 0;
+  padding: 0;
 }
 
 .reasons-text-item {
   font-size: 14px;
   line-height: 26px;
   color: var(--light-black);
-  width: 519px;
+  margin: 0;
+  padding: 0;
 }
 
 .interested-text-item {
@@ -108,12 +115,107 @@ img {
 .travel-date-text-item {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
   color: var(--light-black);
   text-align: center;
 }
 
 .icons {
-  list-style: none; 
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px;
+  padding: 0px; 
+}
+
+/* House item with description */
+
+.house-icon {
+  display: flex;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+.house-text {
+  padding-top: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+.house-description-text {
+  max-width: 254px;
+  padding-top: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Burger item with description */
+
+.burger-icon {
+  display: flex;
+  padding-top: 61px;
+  margin: 0 auto;
+}
+
+.burger-text {
+  padding-top: 29px;
+  text-align: center;
+  margin: 0;
+}
+
+.burger-description {
+  max-width: 297px;
+  padding-top: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Gift item with description */
+
+.gift-icon {
+  display: flex;
+  padding-top: 56px;
+  margin: 0 auto;
+}
+
+.gift-text {
+  padding-top: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+.gift-description {
+  max-width: 270px;
+  padding-top: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Small square with description */
+
+.small-square {
+  max-width: 119px;
+  padding-top: 47px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.small-square-description {
+  max-width: 250px;
+  padding-top: 23px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sedona-not-boring {
+  max-width: 265px;
+  padding-top: 23px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.gray-line-features {
+  min-height: 256px;
 }
 
 .gray-background {
@@ -121,13 +223,14 @@ img {
 }
 .city {
   background-color: var(--blue);
+  text-align: center;
 }
 
 .subtitle-white {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  color: var(--basic-white); 
+  color: var(--basic-white);
 }
 
 .text-white {
@@ -371,15 +474,13 @@ img {
   line-height: 21px;
   color: var(--basic-gray);
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: var(--dark-white);
 }
 
 /* Wrapper */
 .wrapper {
   margin: 0 auto;
-  margin-left: 40px;
-  margin-right: 40px;
   width: 1200px;
   outline: 5px solid rgba(10, 206, 157, 0.3);
   outline-offset: -5px; 
@@ -407,23 +508,48 @@ img {
 
 .main-header-logo {
   display: inline-block;
-  margin-left: 531px;
   position: absolute;
-  top: -20px; 
+  top: 0; 
+  left: 45%;
+  transform: translateX(-50%);
+  transform: translateY(-20%);
   z-index: 1;
 }
 
 /* Main navigation */
 
-.site-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
+.site-navigation li:nth-child(1) {
+  width: 20%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.site-navigation li:nth-child(2) {
+  width: 20%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.site-navigation li:nth-child(3) {
+  width: 20%;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.site-navigation li:nth-child(4) {
+  width: 20%;
+  text-align: right;
+  box-sizing: border-box;
 }
 
 .main-poster {
   position: relative;
   width: 100%;
+  background-image: url(http://www.w3.org/2000/svg);
+  background-color: red;
+  background-position: right;
+  /* Что только не пробовал  */
 }
 
 .welcome-text {
@@ -432,40 +558,70 @@ img {
   left: 371px;
 }
 
-.shape {
-  position: absolute;
-  top: 453px;
-  margin-left: -1200px;
-}
-
 .wonderful-sedona {
-  margin-top: 42px;
-  padding-bottom: 33px;
-  margin-left: 365px;
-  margin-right: 365px;
+  padding-top: 42px;
+  margin-bottom: 33px;
+  margin: 0 auto;
+  max-width: 519px;
   outline: 5px solid rgba(10, 206, 157, 0.3);
   outline-offset: -5px; 
 }
 
-.wonderful-reasons {
-  margin-top: 16px;
-  margin-left: 340px;
-  margin-right: 341px;
+.real-town {
+  display: grid;
+  grid-template-columns: auto 800px;
+  margin-top: 51px;
+}
+
+.true-city {
+  max-width: 149px;
+  padding-top: 47px;
+  margin: 0 auto;
+}
+
+.numero {
+  max-width: 51px;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+.live-goes-on {
+  max-width: 301px;
+  padding-top: 23px;
+  margin: 0 auto;
+}
+
+.bridge-text {
+  max-width: 149.5px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.devil-bridge {
+  margin-top: 81px;
+  display: grid;
+  grid-template-columns: 800px auto;
 }
 
 .interested {
   width: 435px;
-  min-height: 155px;
-  margin-top: 58px;
-  margin-left: 383px;
-  margin-right: 382px;
+  padding-top: 58px;
+  margin: 0 auto;
+  outline: 5px solid rgba(10, 206, 157, 0.3);
+  outline-offset: -5px; 
+}
 
+/* Map picture */
+
+.map-picture {
+  margin-top: 137px;  
 }
 
 /* Footer */
+
 .page-footer {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   outline: 5px solid rgba(10, 206, 157, 0.3);
   outline-offset: -5px; 
 }
@@ -491,8 +647,8 @@ img {
   display: grid;
   grid-template-columns: 46px 46px 46px;
   grid-column-gap: 6px;
+  margin: auto;
   margin-top: 36px;
-  margin-left: 163px;
   justify-content: center;
 }
 
