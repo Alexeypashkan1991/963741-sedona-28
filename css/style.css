@@ -23,7 +23,7 @@
 
 body {
   min-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -283,11 +283,8 @@ img {
 /* Social button */
 
 .social-button {
-  text-align: center;
-}
-
-.social-button {
   list-style: none;
+  text-align: center;
 }
 
 .sort-items {
@@ -305,6 +302,8 @@ img {
 }
 
 .website {
+  display: flex;
+  flex-direction: row;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -320,31 +319,6 @@ img {
 
 .academy:active path {
   fill: var(--metalic);
-}
-
-/* Hotel.html */
-.hotel-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.infrastructure {
-  list-style: none;
-}
-
-.hotel-name {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: var(--basic-black);
-}
-
-.hotel {
-  display: inline;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--light-black);
 }
 
 .option:link {
@@ -378,7 +352,7 @@ img {
   color: var(--blue);
 }
 
-.hotel-name:active .opacity {
+.hotel-name:active .hotel-text {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -429,15 +403,14 @@ img {
 
 .book {
   min-width: 142px;
-  height: 27px;
   color: var(--basic-white);
   background-color: var(--brown);
   margin-left: 6px;
-  margin-right: 522px;
 }
 
 .mark {
-  width: 110px;
+  padding: 0;
+  margin: 0;
   height: 27px;
   font-weight: 700;
   font-size: 14px;
@@ -463,24 +436,10 @@ img {
   color: var(--brown-text);
 }
 
-/* Rating */
-.rating {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  margin-top: 93px;
-  margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-gray);
-  width: 110px;
-  min-height: 27px;
-  background-color: var(--dark-white);
-}
-
 /* Wrapper */
 .wrapper {
   margin: 0 auto;
+  background-color: white;
   width: 1200px;
   outline: 5px solid rgba(10, 206, 157, 0.3);
   outline-offset: -5px; 
@@ -490,14 +449,16 @@ img {
 
 .page {
   height: 100%;
+  background-color: var(--basic-white);
 }
 
 .page-body {
   min-height: 100%;
-  max-width: 1200px;
+  width: 1280px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  background-color: var(--dark-white);
 }
 
 /* LOGO */
@@ -517,45 +478,21 @@ img {
 }
 
 /* Main navigation */
-
-
-.site-navigation li:nth-child(1) {
+.site-navigation li {
   width: 20%;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
 }
 
-.site-navigation li:nth-child(2) {
-  width: 20%;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-.site-navigation li:nth-child(3) {
-  width: 20%;
-  text-align: right;
-  box-sizing: border-box;
-}
-
-.site-navigation li:nth-child(4) {
-  width: 20%;
-  text-align: right;
-  box-sizing: border-box;
+.site-navigation li:nth-child(4n+2) {
+  margin-right: 20%;
 }
 
 .main-poster {
   position: relative;
   width: 100%;
-  background-image: url(http://www.w3.org/2000/svg);
+  background-image: url(../img/Shape.svg);
   background-color: red;
-  background-position: right;
-  /* Что только не пробовал  */
-}
-
-.welcome-text {
-  position: absolute;
-  top: 77px;
-  left: 371px;
 }
 
 .wonderful-sedona {
@@ -592,7 +529,7 @@ img {
 }
 
 .bridge-text {
-  max-width: 149.5px;
+  max-width: 149px;
   padding-top: 50px;
   margin: 0 auto;
 }
@@ -613,8 +550,13 @@ img {
 
 /* Map picture */
 
+.map {
+  position: relative;
+}
+
 .map-picture {
-  margin-top: 137px;  
+  margin-top: 137px;
+  position: relative;
 }
 
 /* Footer */
@@ -622,6 +564,12 @@ img {
 .page-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  background-color: var(--basic-white);
+  opacity: 0.9;
+  width: 1200px;
+  height: 120px;
+  /* top: 2695px; */
   outline: 5px solid rgba(10, 206, 157, 0.3);
   outline-offset: -5px; 
 }
@@ -629,16 +577,16 @@ img {
 .visit {
   display: flex;
   flex-direction: column;
-  margin-top: 23px;
-  margin-left: 153px;
+  align-items: center;
+  padding-top: 23px;
+  margin: 0 auto;
 }
 
 .tel {
   display: flex;
   flex-direction: column;
-  margin-top: 9px;
-  margin-left: 117px;
-  margin-bottom: 36px; 
+  padding-top: 9px;
+  align-items: center;
 }
 
 /* Social button */
@@ -647,8 +595,8 @@ img {
   display: grid;
   grid-template-columns: 46px 46px 46px;
   grid-column-gap: 6px;
-  margin: auto;
-  margin-top: 36px;
+  margin: 0 auto;
+  padding-top: 36px;
   justify-content: center;
 }
 
@@ -680,19 +628,9 @@ img {
 }
 
 .copyright {
-  margin: 0;
-  padding: 0;
-  width: 197px;
-  margin-left: 190px;
-  margin-top: 39px;
-  margin-bottom: 41px;
-}
-
-.copyright .website {
   display: flex;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
+  padding-top: 39px;
 }
 
 .academy {
@@ -701,20 +639,50 @@ img {
 
 /* Hotels */
 
-.housing {
-  margin-left: 73px;
-  margin-top: 30px;
+.infrastructure {
+  list-style: none;
+}
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: 527px 527px;
+  padding-left: 73px;
+  padding-right: 73px;
+  margin: 0 auto;
+  list-style: none;
 }
 
 .hotels-main {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
 }
 
-.opacity {
-  margin-top: 23px;
-  margin-bottom: 7px;
+.hotel-name {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.hotel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--light-black);
+}
+
+.housing {
+  padding-top: 30px;
+  margin: 0;
+}
+
+.hotel-text {
+  padding-top: 23px;
+  margin: 0;
 }
 
 .price {
@@ -722,21 +690,46 @@ img {
 }
 
 .hotel-description {
-  margin-left: 29px;
+  margin: 0;
+  padding-left: 29px;
 }
 
-.more-info {
-  margin-top: 12px;
+/* Rating */
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rating-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-gray);
+  width: 110px;
+  min-height: 27px;
+  background-color: var(--dark-white);
+  background-size: 27px;
 }
 
 .rating-star {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 72px;
+  justify-content: flex-end;
 }
 
 .star-pic {
-  margin-right: 5px;
-  margin-top: 29px;
+  margin-top: 29px; 
+}
+
+.stick {
+  margin-left: -73px;
+}
+
+.stick1 {
+  margin-left: -600px;
 }
