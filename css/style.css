@@ -19,6 +19,7 @@
   --metalic: #BDBBBC;
   --narrow-silver: #CACACA;
   --checkbox-gray: #6a6a6a;
+  --border-gray: #E5E5E5;
 }
 
 body {
@@ -93,7 +94,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
-  margin: 0;
+  margin-bottom: 49px;
   padding: 0;
 }
 
@@ -124,8 +125,12 @@ img {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0px;
-  padding: 0px; 
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.devil-icons {
+  padding-bottom: 81px;
 }
 
 /* House item with description */
@@ -195,7 +200,6 @@ img {
 
 .small-square {
   max-width: 119px;
-  padding-top: 47px;
   margin: 0 auto;
   text-align: center;
 }
@@ -216,6 +220,8 @@ img {
 
 .gray-line-features {
   min-height: 256px;
+  padding-top: 47px;
+  padding-left: 0;
 }
 
 .gray-background {
@@ -283,12 +289,26 @@ img {
 /* Social button */
 
 .social-button {
+  display: grid;
+  grid-template-columns: 46px 46px 46px;
+  grid-column-gap: 6px;
   list-style: none;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .sort-items {
   list-style: none; 
+}
+
+.social-items {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
 }
 
 .social-items:link {
@@ -304,6 +324,8 @@ img {
 .website {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -409,9 +431,7 @@ img {
 }
 
 .mark {
-  padding: 0;
-  margin: 0;
-  height: 27px;
+  margin-top: 15px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -454,7 +474,6 @@ img {
 
 .page-body {
   min-height: 100%;
-  width: 1280px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -468,12 +487,11 @@ img {
 }
 
 .main-header-logo {
-  display: inline-block;
   position: absolute;
   top: 0; 
-  left: 45%;
+  left: 50%;
   transform: translateX(-50%);
-  transform: translateY(-20%);
+  margin-top: -20px;
   z-index: 1;
 }
 
@@ -488,19 +506,16 @@ img {
   margin-right: 20%;
 }
 
-.main-poster span {
+.main-poster::after {
   position: absolute;
-  background: url(../img/Shape.svg) no-repeat;
-	background-position: center;
-  top: 126px;  
+  background: url(../img/shape.svg) no-repeat;
+  background-position: center;
+  bottom: 0;  
 	left: 0;  
-	width: 100%; 
-  height: 100%;
 }
 
-.wonderful-sedona {
+.wonderful-sedona p {
   padding-top: 42px;
-  margin-bottom: 33px;
   margin: 0 auto;
   max-width: 519px;
   outline: 5px solid rgba(10, 206, 157, 0.3);
@@ -520,7 +535,7 @@ img {
 }
 
 .numero {
-  max-width: 51px;
+  text-align: center;
   padding-top: 25px;
   margin: 0 auto;
 }
@@ -538,12 +553,11 @@ img {
 }
 
 .devil-bridge {
-  margin-top: 81px;
   display: grid;
   grid-template-columns: 800px auto;
 }
 
-.interested {
+.interested p {
   width: 435px;
   padding-top: 58px;
   margin: 0 auto;
@@ -569,70 +583,43 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
-  bottom: 0px;
-  background-color: var(--basic-white);
-  opacity: 0.9;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
+}
+
+.footer-secondary {
+  position: relative;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .visit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 23px;
-  margin: 0 auto;
-}
-
-.tel {
-  display: flex;
-  flex-direction: column;
-  padding-top: 9px;
-  align-items: center;
+  margin-bottom: 9px;
 }
 
 /* Social button */
 
-.social-button {
-  display: grid;
-  grid-template-columns: 46px 46px 46px;
-  grid-column-gap: 6px;
-  margin: 0 auto;
-  padding-top: 36px;
-  justify-content: center;
-}
 
-.twitter {
-  width: 46px;
-  height: 48px;
+.social-network {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  background-color: var(--blue);
-}
-
-.facebook {
-  width: 46px;
-  height: 48px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--blue);
-}
-
-.youtube {
-  width: 46px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--blue);
 }
 
 .copyright {
   display: flex;
-  margin: 0 auto;
-  padding-top: 39px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .academy {
@@ -647,18 +634,19 @@ img {
 
 .hotel-list {
   display: grid;
-  grid-template-columns: 527px 527px;
-  padding-left: 73px;
-  padding-right: 73px;
+  grid-template-columns: 1200px;
   margin: 0 auto;
+  padding: 0;
   list-style: none;
+  border-top: 1px solid var(--border-gray);
 }
 
 .hotels-main {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 150px;
+  flex-direction: row;
+  padding-left: 73px;
+  padding-right: 73px;
+  border-bottom: 1px solid var(--border-gray);
 }
 
 .hotel-name {
@@ -666,12 +654,17 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: var(--basic-black);
+  }
+
+.hotel-text {
+  margin: 0;
+  padding-bottom: 7px;
 }
 
-.hotel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.place p {
+  display: inline;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: var(--light-black);
@@ -679,31 +672,15 @@ img {
 
 .housing {
   padding-top: 30px;
-  margin: 0;
-}
-
-.hotel-text {
-  padding-top: 23px;
-  margin: 0;
-}
-
-.price {
-  margin-left: 9px;
+  padding-bottom: 30px;
 }
 
 .hotel-description {
-  margin: 0;
   padding-left: 29px;
+  padding-top: 24px;
 }
 
 /* Rating */
-
-.rating {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
 
 .rating-number {
   display: flex;
@@ -722,17 +699,6 @@ img {
 .rating-star {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-}
-
-.star-pic {
+  align-items: flex-end;
   margin-top: 29px; 
-}
-
-.stick {
-  margin-left: -73px;
-}
-
-.stick1 {
-  margin-left: -600px;
 }
