@@ -24,11 +24,10 @@
       </header> 
   <main>
     <!--Search bar form-->
-    <section>
+    <section class="hotel-form">
       <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend class="text-white-subtitle">Инфраструктура:</legend>
           <ul class="infrastructure">
+            <h2 class="text-white-subtitle">Инфраструктура:</h2>
             <li>
               <input class="checkmark" type="checkbox" id="pool" name="swimming-pool" checked>
               <label class="text-white" for="pool">Бассейн</label>
@@ -41,11 +40,9 @@
               <input class="checkmark" type="checkbox" id="wi-fi" name="wi-fi-connection">
               <label class="text-white" for="wi-fi">WI-FI</label>
             </li> 
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="text-white-subtitle">Тип жилья:</legend>
-          <ul class="infrastructure">
+          </ul>  
+          <ul class="living-type">
+            <h2 class="text-white-subtitle">Тип жилья:</h2>
             <li>
               <input class="checkmark" type="checkbox" id="hotel" name="hotel-living" checked>
               <label class="text-white" for="hotel">Гостиница</label>
@@ -59,29 +56,30 @@
               <label class="text-white" for="apartment">Апартаменты</label>
             </li> 
           </ul>
-        </fieldset>
         <div class="range">
         <h2 class="text-white-subtitle">Стоимость в сутки(Р):</h2>
           <div class="controls">
             <label class="text-white min-price">От<input type="number" name="min-price" min="0" max="3000">0</label>
             <label class="text-white max-price">До<input type="number" name="max-price" min="0" max="3000">3000</label>
+          </div>
+          <div class="scale">  
+            <div class="min-value"><button type="button"></button></div>
+            <div class="max-value"><button type="button"></button></div>
           </div>  
-          <div class="scale min-value"><button type="button"></button></div>
-          <div class="scale max-value"><button type="button"></button></div>
         <button class="show-button" type="submit">Показать</button> 
         </div>
       </form>
     </section>  
-      <img src="img/background.jpg" width="1200" height="217" alt="Фон формы">
+      <!-- <img src="img/background.jpg" width="1200" height="217" alt="Фон формы"> -->
       <!-- Result bar -->
-      <section>
+      <section class="search-bar">
         <p class="sedona-text-item">
           Найдено: 3<!-- Output result form -->
         </p>
         <p class="sort">
           Сортировка: 
         </p>
-        <ul class="sort sort-items">
+        <ul class="sort-items">
           <li>
             <a class="option sort-price" href=index.html">по цене</a>
           </li>
@@ -92,9 +90,9 @@
             <a class="option sort-rating" href="rating.html">по рейтингу</a>
           </li>
           <!-- Интерактивные стрелочки вниз вверх -->
-          <li>
+          <li class="narrows">
             <a class="narrow" href="https://up.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
-            <a class="narrow" href="https://down.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a> 
+            <a class="narrow" href="https://down.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
           </li>
         </ul> 
       </section>
