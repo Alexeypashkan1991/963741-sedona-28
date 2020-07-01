@@ -44,17 +44,17 @@
       </section>
       <section>
         <ul class="icons devil-icons">
-          <li>
+          <li class="devil-item">
             <img class="house-icon" src="img/house-icon.svg" width="75" height="72" alt="иконка домика">
             <p class="subtitle-black house-text">Жильё</p>
             <p class="black-text house-description-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li>
+          <li class="devil-item">
             <img class="burger-icon" src="img/burger-icon.svg" width="75" height="70" alt="иконка бургера">
             <p class="subtitle-black burger-text">Еда</p>
             <p class="black-text burger-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
+          <li class="devil-item">
             <img class="gift-icon" src="img/gift-icon.svg" width="64" height="77" alt="иконка сувенира">
             <p class="subtitle-black gift-text">Сувениры</p>
             <p class="black-text gift-description">Не только китайского, но и местного производства!</p>
@@ -71,17 +71,17 @@
       </section>
       <section class="gray-background">
         <ul class="icons gray-line-features">
-          <li>
+          <li class="gray-line-item">
             <p class="subtitle-black small-square">Небольшая площадь</p>
             <p class="black-text numero">-№3-</p>
             <p class="black-text small-square-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="gray-line-item">
             <p class="subtitle-black small-square">Красивая дорога</p>
             <p class="black-text numero">-№4-</p>
             <p class="black-text sedona-not-boring">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="gray-line-item">
             <p class="subtitle-black small-square">Мало туристов</p>
             <p class="black-text numero">-№5-</p>
             <p class="black-text small-square-description">Большинство едет в гранд каньон и толпится там</p>
@@ -89,37 +89,43 @@
         </ul>  
       </section>
       <section class="interested">
-            <p class="feature-item interested-text-item">Заинтересовались ?</p>
+            <p class="feature-item interested-text-item">заинтересовались ?</p>
             <p class="feature-item travel-date-text-item">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
       </section>
       <!-- Booking form -->
       <section class="form">
-        <button type="button">Поиск гостиницы в седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
+       <div class="form-container"> 
+        <button class="search hotel-search" type="button">Поиск гостиницы в седоне</button>
+        <form class="forma" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-content">
+          <p class="check-in">
             <label for="check-in-date">Дата заезда</label> 
-            <input id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017"> 
+            <input class="field-fill date" id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017"> 
           </p>
-          <p>
+          <p class="check-out">
             <label for="check-out-date">Дата выезда</label> 
-            <input id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017"> 
+            <input class="field-fill date" id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017"> 
           </p>
-          <p>
-            <label for="number-of-adults">Взрослые</label> 
-            <button type="button">+</button>
-            <input id="number-of-adults" type="number" name="adults" placeholder="2">
-            <button type="button">-</button>  
-          </p>
-          <p>
-            <label for="number-of-kids">Дети</label> 
-            <button type="button">-</button>   
-            <input id="number-of-kids" type="number" name="kids" placeholder="0">
-            <button type="button">+</button>
-          </p>    
-          <button type="submit">Найти</button>
+          <div class="clientel">
+            <p class="adults">
+              <label for="number-of-adults">Взрослые</label> 
+              <button type="button">+</button>
+              <input class="field-fill adults-field" id="number-of-adults" type="number" name="adults" placeholder="2">
+              <button type="button">-</button>  
+            </p>
+            <p class="kids">
+              <label for="number-of-kids">Дети</label> 
+              <button type="button">-</button>   
+              <input class="field-fill adults-field" id="number-of-kids" type="number" name="kids" placeholder="0">
+              <button type="button">+</button>
+            </p>
+          </div>
+         </div> 
+          <button class="find search" type="submit"><span>Найти</span></button>
         </form>
+       </div> 
       </section>    
        
     </main>
