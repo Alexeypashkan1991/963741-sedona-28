@@ -40,7 +40,7 @@
                 <label class="check-text text-white" for="parking">Парковка</label>
               </li>
               <li>
-                <input class="check-input" type="checkbox" id="wi-fi" name="wi-fi-connection">
+                <input class="check-input" type="checkbox" id="wi-fi" name="wi-fi-connection" >
                 <span class="checkbox"></span>
                 <label class="check-text text-white" for="wi-fi">WI-FI</label>
               </li> 
@@ -67,16 +67,23 @@
             </ul>
         </fieldset>
         <fieldset class="range">
-          <legend class="text-white-subtitle">Стоимость в сутки(Р):</legend>
+          <legend class="text-white-subtitle">Стоимость в сутки (Р):</legend>
             <div class="controls">
-              <label class="text-white min-price">От<input type="number" name="min-price" min="0" max="3000">0</label>
-              <label class="text-white max-price">До<input type="number" name="max-price" min="0" max="3000">3000</label>
+              <label class="text-white min-price">
+                <input type="number" name="min-price" min="0" max="3000" placeholder="от 0">
+              </label>
+              <label class="text-white max-price">
+                <input type="number" name="max-price" min="0" max="3000" placeholder="до 3000">
+              </label>
             </div>
-            <div class="scale">  
-              <div class="min-value"><button type="button"></button></div>
-              <div class="max-value"><button type="button"></button></div>
-            </div>  
-          <button class="show-button" type="submit">Показать</button> 
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>    
+                <div class="toggle min-value"></div>
+                <div class="toggle max-value"></div>
+            </div>    
+          <div class="price-button"><button class="show-button" type="submit">Показать</button></div> 
         </fieldset>
       </form>
     </section>  
