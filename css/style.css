@@ -23,6 +23,7 @@
   --form-background: #766357;
   --blue-text: #629EC2;
   --range-scale: #ABABAB;
+  --input-color: #EBEBEB;
 }
 
 body {
@@ -56,6 +57,8 @@ img {
 .form {
   display: flex;
   flex-direction: column;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
   z-index: 1;
   background-color: var(--basic-white);
@@ -64,8 +67,6 @@ img {
 .form-container {
   width: 568px;
   min-height: 395px;
-  outline: 5px solid rgba(233, 6, 25, 0.3);
-  outline-offset: -5px; 
 }
 
 .forma {
@@ -74,6 +75,7 @@ img {
   padding: 0;
   margin: 0;
   padding-left: 55px;
+  padding-right: 55px;
 }
 
 .clientel {
@@ -100,7 +102,7 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   padding-left: 12px;
-  border: 1px solid 
+  border: 1px solid;
   /* background: url(../img/calendar.svg);
   background-repeat: no-repeat;
   background-position: absolute; */
@@ -124,6 +126,8 @@ img {
   height: 86px;
   background-color: var(--form-background);
   border: none;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -143,12 +147,34 @@ img {
 }
 
 .check-in {
+  position: relative;
   padding: 0;
   margin: 0;
   margin-top: 55px;
 }
 
+.check-in,
 .check-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+
+
+.calendar-1 {
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+
+.check-out {
+  position: relative;
   padding: 0;
   margin: 0;
   margin-top: 29px;
@@ -156,13 +182,18 @@ img {
 
 .hotel-search {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   margin-top: 50px;
 }
 
-.hotel-search:hover {
+.hotel-search:hover,
+.hotel-search:focus {
   background-color: var(--hover-brown);
+  outline: none;
 }
 
 .hotel-search:active {
@@ -170,8 +201,10 @@ img {
   background-color: var(--active-brown);
 }
 
-.find:hover {
+.find:hover,
+.find:focus {
   background-color: var(--medium-blue);
+  outline: none;
 }
 
 .find:active {
@@ -179,18 +212,28 @@ img {
   background-color: var(--dark-blue);
 }
 
+.field-fill::placeholder {
+  color: var(--basic-black);
+}
+
 .field-fill {
-  border: 1px solid lime;
+  box-shadow: 0 0 0 1px lime;
+  border: none;
+  background-color: var(--input-color);
 }
 
 .field-fill:hover {
   border: none;
-  background-color: var(--dark-white);
+  box-shadow: none;
+  background-color: var(-);
 }
 
-.field-fill:active {
-  border: 1px solid var(--dark-white);
+.field-fill:active,
+.field-fill:focus {
+  box-shadow: 0 0 0 2px var(--border-gray);
   background: 0;
+  outline: none;
+  border: none;
 }
 
 /* Main navigation style link */
@@ -927,41 +970,50 @@ img {
   border: none;
 }
 
+.min-price {
+  position: absolute;
+  top: 6px;
+  left: 52px;
+  padding-right: 39px;
+  border-right: 2px solid var(--basic-white);
+}
+
+.max-price {
+  position: absolute;
+  top: 6px;
+  left: 198px;
+}
+/* ??? */
+.rating-number[type=number] {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .controls {
+  display: flex;
   position: relative;
   height: 36px;
   margin-top: 10px;
   border: 2px solid var(--basic-white);
 }
-/* не сумел выставить текст по центру */
+
+
 .controls input {
   border: none;
-  text-align: center;
   background-color: transparent;
   text-transform: uppercase;
-  width: 140px;
 }
 
 .controls input::placeholder {
   color: var(--basic-white);
-  /* Не сумел скрыть стрелочки в input */
   -webkit-appearance: none;
-}
-
-.controls:after {
-  content: url("../img/vertical-line.svg");
-  position: absolute;
-  width: 2px;
-  height: 22px;
-  top: 5px;
-  /* Не сумел выставить вертикальный разделительный элемент по середине */
-  padding-left: -350px;
+  appearance: none;
 }
 
 .range-controls .scale {
   margin-top: 20px;
   height: 2px;
-  width: 306px;
+  width: 317px;
   background: var(--range-scale);
 }
 
