@@ -11,14 +11,14 @@
     <div class="wrapper">
       <header class="main-header">
         <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a href="index.html" class="main-header-logo">
             <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип отеля">
           </a>
           <ul class="site-navigation">
             <li><a class="menu" href="info.html">Информация</a></li>
             <li><a class="menu" href="content.html">Фото и видео</a></li>
             <li><a class="menu" href="stateMap.html">Карта штата</a></li>
-            <li><a class="menu" href="hotels.html">Гостиницы</a></li>
+            <li><a class="menu menu-on-page" href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>    
       </header> 
@@ -97,7 +97,7 @@
         </p>
         <ul class="sort-items">
           <li>
-            <a class="option sort-price" href=index.html">по цене</a>
+            <a class="option sort-price sort-price-active" href=index.html">по цене</a>
           </li>
           <li>
             <a class="option sort-type" href="type.html">по типу</a>
@@ -106,11 +106,13 @@
             <a class="option sort-rating" href="rating.html">по рейтингу</a>
           </li>
         </ul>
-        <ul class="narrows"> 
+        <ul class="arrows"> 
           <!-- Интерактивные стрелочки вниз вверх -->
           <li>
-            <a class="narrow" href="https://up.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
-            <a class="narrow" href="https://down.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+            <a class="arrow" href="https://up.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+          </li>
+          <li>  
+            <a class="arrow arrow-active" href="https://down.com"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
           </li>
         </ul> 
       </section>
@@ -121,10 +123,10 @@
           <li class="hotels-main">
             <img class="housing" src="img/amara.jpg" width="135" height="90" alt="фото отеля">
           <div class="hotel-description">  
-            <a class="hotel-name" href="#"><h2 class="hotel-text">Amara resort & spa</h2></a>
+            <a class="hotel-name" href="#"><p class="hotel-text">Amara resort & spa</p></a>
             <div class="place">
             <p class="hotel accommodation">Гостиница</p>
-            <p class="hotel price">от 4000р.</p>
+            <p class="hotel price">от 4000 р.</p>
             </div>
             <button class="mark more-info" type="button">Подробнее</button>
             <button class="mark book" type="button">Забронировать</button>
@@ -138,10 +140,10 @@
           <li class="hotels-main">
             <img class="housing" src="img/desert.jpg" width="135" height="90" alt="фото мотеля">
           <div class="hotel-description">  
-            <a class="hotel-name" href="#"><h2 class="hotel-text">Desert Quail inn</h2></a>
+            <a class="hotel-name" href="#"><p class="hotel-text">Desert Quail inn</p></a>
             <div class="place">
             <p class="hotel accommodation">Мотель</p>
-            <p class="hotel price">от 3000р.</p>
+            <p class="hotel price">от 3000 р.</p>
             </div>
             <button class="mark more-info" type="button">Подробнее</button>
             <button class="mark book" type="button">Забронировать</button>
@@ -153,12 +155,12 @@
           </li>
           <!--Hotel-3-->
           <li class="hotels-main">
-            <img class="housing" src="img/villas.jpg" width="135" height="90" alt="фото аппартаментов">
+            <img class="housing" src="img/villas.jpg" width="135" height="90" alt="фото апартаментов">
           <div class="hotel-description">  
-            <a class="hotel-name" href="#"><h2 class="hotel-text">Villas at poco diablo</h2></a>
+            <a class="hotel-name" href="#"><p class="hotel-text">Villas at poco diablo</p></a>
             <div class="place">
-            <p class="hotel accommodation">Аппартаменты</p>
-            <p class="hotel price">от 2000р.</p>
+            <p class="hotel accommodation">Апартаменты</p>
+            <p class="hotel price">от 2000 р.</p>
             </div>
             <button class="mark more-info" type="button">Подробнее</button>
             <button class="mark book" type="button">Забронировать</button>
