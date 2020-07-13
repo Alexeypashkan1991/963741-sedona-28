@@ -95,52 +95,54 @@
             </p>
       </section>
       <!-- Booking form -->
-      <button class="search hotel-search" type="button"><span>Поиск гостиницы в седоне</span></button>
-      <section class="form">
-       <div class="form-container"> 
-        <form class="forma" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-content">
-          <p class="check-in">
-            <label for="check-in-date">Дата заезда</label> 
-            <input class="field-fill date" id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017">
-            <button type="button" class="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><g fill="#a9a9a9"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></g></svg></button> 
-          </p>
-          <p class="check-out">
-            <label for="check-out-date">Дата выезда</label> 
-            <input class="field-fill date" id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017">
-            <button type="button" class="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><g fill="#a9a9a9"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></g></svg></button> 
-          </p>
-          <div class="clients">
-            <p class="adults">
-              <label for="number-of-adults">
-                Взрослые:
-                <button class="button-minus clients-button" type="button"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g fill="#a9a9a9"><rect width="12" height="3"/></g>
-                  </svg></button>
-                <input class="field-fill adults-field" id="number-of-adults" type="number" name="adults" placeholder="2">
-                <button class="button-plus clients-button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g fill="#a9a9a9"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
-                  </g></svg></button>
-              </label> 
+      <div class="booking-form">
+        <button class="search hotel-search" type="button"><span>Поиск гостиницы в седоне</span></button>
+        <section class="form">
+        <div class="form-container"> 
+          <form class="forma" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form-content">
+            <p class="check-in">
+              <label for="check-in-date">Дата заезда</label> 
+              <input class="field-fill date" id="check-in-date" type="text" name="check-in" placeholder="24 апреля 2017">
+              <button type="button" class="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><g fill="#a9a9a9"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></g></svg></button> 
             </p>
-            <p class="kids">
-              <label for="number-of-kids">
-                Дети:
-                <button class="button-minus clients-button" type="button"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g fill="#a9a9a9"><rect width="12" height="3"/></g>
-                  </svg></button> 
-                <input class="field-fill adults-field" id="number-of-kids" type="number" name="kids" placeholder="0">
-                <button class="button-plus clients-button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g fill="#a9a9a9"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
-                  </g></svg></button>
-              </label>
+            <p class="check-out">
+              <label for="check-out-date">Дата выезда</label> 
+              <input class="field-fill date" id="check-out-date" type="text" name="check-out" placeholder="4 июля 2017">
+              <button type="button" class="calendar"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><g fill="#a9a9a9"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></g></svg></button> 
             </p>
-          </div>
-         </div> 
-          <button class="find search" type="submit"><span>Найти</span></button>
-        </form>
-       </div> 
-      </section>    
+            <div class="clients">
+              <p class="adults">
+                <label for="number-of-adults">
+                  Взрослые:
+                  <button class="button-minus clients-button" type="button"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#a9a9a9"><rect width="12" height="3"/></g>
+                    </svg></button>
+                  <input class="field-fill adults-field" id="number-of-adults" type="number" name="adults" placeholder="2">
+                  <button class="button-plus clients-button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#a9a9a9"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                    </g></svg></button>
+                </label> 
+              </p>
+              <p class="kids">
+                <label for="number-of-kids">
+                  Дети:
+                  <button class="button-minus clients-button" type="button"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#a9a9a9"><rect width="12" height="3"/></g>
+                    </svg></button> 
+                  <input class="field-fill adults-field" id="number-of-kids" type="number" name="kids" placeholder="0">
+                  <button class="button-plus clients-button" type="button"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#a9a9a9"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                    </g></svg></button>
+                </label>
+              </p>
+            </div>
+          </div> 
+            <button class="find search" type="submit"><span>Найти</span></button>
+          </form>
+        </div> 
+        </section> 
+    </div>   
        
     </main>
   <section class="map">
@@ -180,5 +182,6 @@
       </section>
     </footer>
   </section> 
+  <script src="js/script.js"></script>
   </body>
 </html>
